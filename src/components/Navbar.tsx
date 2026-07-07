@@ -24,15 +24,21 @@ export default function Navbar() {
     setMenuOpen(false);
     const id = item.toLowerCase().replace(/\s+/g, "-");
 
-    if (location.pathname !== "/") {
-      // Not on the home page (e.g. on /cards) — navigate home first,
-      // then scroll to the target section once HomePage has mounted.
-      navigate("/", { state: { scrollTo: id } });
+    if (item === "Home") {
+      if (location.pathname !== "/") {
+        navigate("/");
+      } else {
+        document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
+      }
       return;
     }
 
-    // Already on the home page — just scroll directly.
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    if (location.pathname === "/") {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // Navigate home first, then scroll to the requested section once it mounts
+      navigate("/", { state: { scrollTo: id } });
+    }
   };
 
   return (
@@ -49,13 +55,13 @@ export default function Navbar() {
               className="absolute inset-0 animate-spin-slow rounded-md border-2 border-cyan-400/60"
               style={{ clipPath: "polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)" }}
             />
-            <span className="font-display text-lg font-black text-cyan-300 text-glow-blue">N</span>
+            <span className="font-display text-lg font-black text-cyan-300 text-glow-blue">E</span>
           </div>
           <div className="font-display leading-none">
             <div className="text-lg font-bold tracking-[0.2em] text-white">
-              Eternal<span className="text-glow-magenta text-[#ff2a6d]">Echoes</span>
+              ETERNAL <span className="text-glow-magenta text-[#ff2a6d]">ECHOES</span>
             </div>
-            <div className="font-mono-cyber text-[9px] tracking-[0.3em] text-cyan-400/70">EST. 2026</div>
+            <div className="font-mono-cyber text-[9px] tracking-[0.3em] text-cyan-400/70">COMMUNITY</div>
           </div>
         </Link>
 

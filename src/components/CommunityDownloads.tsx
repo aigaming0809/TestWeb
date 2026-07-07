@@ -91,7 +91,7 @@ export default function CommunityDownloads() {
               rel="noopener noreferrer"
               className="btn-cyber clip-notch box-glow-blue relative border border-cyan-400 bg-gradient-to-r from-cyan-500/30 to-cyan-400/10 px-10 py-4 font-display text-sm font-bold tracking-[0.15em] text-cyan-200 hover:scale-105"
             >
-              ⚡ DOWNLOAD NOW
+              ⚡ DOWNLOAD
             </a>
           </motion.div>
 

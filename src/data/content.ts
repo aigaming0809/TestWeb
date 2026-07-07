@@ -142,49 +142,6 @@ export const cards = [
   },
 ];
 
-export const leaderboard = [
-  { rank: 1, name: "MORGRAVE VOID", winRate: 96, deck: "Shadow Circuit", image: "/images/duelist-4.jpg", medal: "🏆" },
-  { rank: 2, name: "KAIZO VANTABLACK", winRate: 94, deck: "Cyber Machine", image: "/images/duelist-1.jpg", medal: "🥈" },
-  { rank: 3, name: "LUNA NEONSTRIKE", winRate: 91, deck: "Plasma Phoenix", image: "/images/duelist-2.jpg", medal: "🥉" },
-  { rank: 4, name: "DRAKON ZERO", winRate: 88, deck: "Neon Dragon", image: "/images/duelist-3.jpg", medal: "⭐" },
-  { rank: 5, name: "NULLBYTE RAZE", winRate: 85, deck: "Void Spellcaster", image: "/images/duelist-4.jpg", medal: "⭐" },
-];
-
-export const news = [
-  {
-    id: 1,
-    tag: "TOURNAMENT",
-    title: "The Neon Colosseum Championship Kicks Off Season 7",
-    excerpt: "Top-ranked duelists across the grid converge for the biggest cyber tournament of the year, with a prize pool of 2M credits.",
-    image: "/images/hero-bg.jpg",
-    date: "12.04.2099",
-  },
-  {
-    id: 2,
-    tag: "UPDATE",
-    title: "Patch 4.7 Introduces Fusion Overclock Mechanics",
-    excerpt: "New overclock system lets duelists fuse monsters mid-battle for devastating combo chains.",
-    image: "/images/card-dragon.jpg",
-    date: "10.28.2099",
-  },
-  {
-    id: 3,
-    tag: "LORE",
-    title: "Who Is Morgrave Void? The Archon of Shadows Explained",
-    excerpt: "A deep dive into the mysterious S-Class duelist dominating the leaderboard this cycle.",
-    image: "/images/duelist-4.jpg",
-    date: "10.15.2099",
-  },
-  {
-    id: 4,
-    tag: "COMMUNITY",
-    title: "Deck Builder Spotlight: Top 5 Community Cyber-Decks",
-    excerpt: "We break down the community's most devastating deck archetypes climbing the ranked ladder.",
-    image: "/images/card-sorceress.jpg",
-    date: "10.02.2099",
-  },
-];
-
 export const navItems = [
   "Home",
   "Cards",

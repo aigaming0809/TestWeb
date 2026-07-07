@@ -1,9 +1,6 @@
 const socials = [
   { name: "Discord", icon: "💬" },
-  { name: "X / Twitter", icon: "𝕏" },
-  { name: "YouTube", icon: "▶" },
-  { name: "Twitch", icon: "🎥" },
-  { name: "Instagram", icon: "📷" },
+  { name: "Whatsapp", icon: "🟢" },
 ];
 
 const columns = [
@@ -13,11 +10,11 @@ const columns = [
   },
   {
     title: "COMMUNITY",
-    links: ["Forums", "Discord", "Tournaments", "Fan Art"],
+    links: ["Forums", "Discord", "Fan Art"],
   },
   {
     title: "SUPPORT",
-    links: ["Help Center", "Bug Reports", "Contact", "Fair Play Policy"],
+    links: ["Whatsapp"],
   },
 ];
 

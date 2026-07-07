@@ -83,7 +83,7 @@ export default function CommunityDownloads() {
             className="glass-panel clip-notch mx-auto mt-12 flex max-w-2xl flex-col items-center gap-4 p-8 md:flex-row md:justify-between md:text-left"
           >
             <div>
-              <h3 className="font-display text-xl font-black text-white">NEXUS DUEL // v4.7.2</h3>
+              <h3 className="font-display text-xl font-black text-white">Eternal Echoes // v1.0 BETA</h3>
               <p className="mt-1 font-mono-cyber text-xs text-slate-400">FREE TO PLAY • CROSS-PLATFORM • 42 GB</p>
             </div>
             <button className="btn-cyber clip-notch box-glow-blue relative border border-cyan-400 bg-gradient-to-r from-cyan-500/30 to-cyan-400/10 px-10 py-4 font-display text-sm font-bold tracking-[0.15em] text-cyan-200 hover:scale-105">

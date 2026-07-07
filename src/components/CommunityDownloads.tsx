@@ -1,17 +1,18 @@
 import { motion } from "framer-motion";
 
 const platforms = [
-  { name: "PC / STEAM", icon: "🖥️", size: "400+ MB", version: "1.0 BETA" },
-  { name: "MOBILE", icon: "📱", size: "400+ MB", version: "v1.0 BETA" },
+  { name: "PC", icon: "🖥️", size: "400MB+", version: "V1.0 BETA" },
+  { name: "MOBILE", icon: "📱", size: "400MB+", version: "V1.0 BETA" },
 ];
 
 const specs = [
-  { label: "RECOMENDED", color: "#8aa0b8", specs: ["OS: Windows 10 64-bit", "RAM: 8 GB", "GPU: GTX 1060 / RX 580", "Storage: 45 GB SSD"] },
-  ];
+  { label: "MINIMUM", color: "#8aa0b8", specs: ["OS: Windows 10 64-bit", "RAM: 4 GB", "GPU: Intel HD 620 / equivalent", "Storage: 500 MB"] },
+  { label: "RECOMMENDED", color: "#00e5ff", specs: ["OS: Windows 11 64-bit", "RAM: 8 GB", "GPU: GTX 1050 / equivalent", "Storage: 1 GB SSD"] },
+];
 
 const community = [
-  { name: "Discord", members: "482K", icon: "💬", color: "#7b2dff" },
-  { name: "Whatsapp Group", members: "210K", icon: "💬", color: "#00e5ff" },
+  { name: "Discord Server", members: "1.2K", icon: "💬", color: "#7b2dff" },
+  { name: "WhatsApp Group", members: "500", icon: "📱", color: "#00e5ff" },
 ];
 
 export default function CommunityDownloads() {
@@ -27,7 +28,7 @@ export default function CommunityDownloads() {
             <div className="divider-glow mx-auto mt-6 w-40" />
           </div>
 
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mx-auto grid max-w-xl grid-cols-1 gap-6 sm:grid-cols-2">
             {community.map((c, i) => (
               <motion.div
                 key={c.name}
@@ -56,7 +57,7 @@ export default function CommunityDownloads() {
         <div className="mx-auto max-w-[1200px] px-6 text-center lg:px-10">
           <div className="glass mb-6 inline-flex items-center gap-2 rounded-full px-4 py-1.5 font-mono-cyber text-[11px] tracking-[0.3em] text-cyan-300">
             <span className="h-2 w-2 animate-pulse rounded-full bg-cyan-400 shadow-[0_0_8px_#00e5ff]" />
-            LATEST BUILD: v4.7.2 — READY TO DEPLOY
+            LATEST BUILD: V1.0 BETA — READY TO DEPLOY
           </div>
           <p className="font-mono-cyber mb-3 text-xs tracking-[0.4em]" style={{ color: "#ff2a6d" }}>
             // GET CONNECTED
@@ -78,8 +79,8 @@ export default function CommunityDownloads() {
             className="glass-panel clip-notch mx-auto mt-12 flex max-w-2xl flex-col items-center gap-4 p-8 md:flex-row md:justify-between md:text-left"
           >
             <div>
-              <h3 className="font-display text-xl font-black text-white">Eternal Echoes // v1.0 BETA</h3>
-              <p className="mt-1 font-mono-cyber text-xs text-slate-400">FREE TO PLAY • CROSS-PLATFORM • 42 GB</p>
+              <h3 className="font-display text-xl font-black text-white">ETERNAL ECHOES // V1.0 BETA</h3>
+              <p className="mt-1 font-mono-cyber text-xs text-slate-400">FREE TO PLAY • CROSS-PLATFORM • 400MB+</p>
             </div>
             <button className="btn-cyber clip-notch box-glow-blue relative border border-cyan-400 bg-gradient-to-r from-cyan-500/30 to-cyan-400/10 px-10 py-4 font-display text-sm font-bold tracking-[0.15em] text-cyan-200 hover:scale-105">
               ⚡ DOWNLOAD NOW
@@ -87,7 +88,7 @@ export default function CommunityDownloads() {
           </motion.div>
 
           {/* platform grid */}
-          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mx-auto mt-10 grid max-w-xl grid-cols-1 gap-6 sm:grid-cols-2">
             {platforms.map((p, i) => (
               <motion.button
                 key={p.name}

@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
 const platforms = [
-  { name: "PC", icon: "🖥️", size: "400MB+", version: "V1.0 BETA" },
-  { name: "MOBILE", icon: "📱", size: "400MB+", version: "V1.0 BETA" },
+  { name: "PC", icon: "🖥️", size: "400MB+", version: "V1.0 BETA", link: "https://drive.google.com/file/d/1fAoHZHYlrXjb_814l2BwhkhFVLPWRi4H/view?usp=sharing" },
+  { name: "MOBILE", icon: "📱", size: "400MB+", version: "V1.0 BETA", link: "https://drive.google.com/file/d/1wBIShdDLHwvzv_fwkEqSqVASAwcHbRsF/view?usp=sharing" },
 ];
 
 const specs = [
@@ -11,8 +11,8 @@ const specs = [
 ];
 
 const community = [
-  { name: "Discord Server", members: "1.2K", icon: "💬", color: "#7b2dff" },
-  { name: "WhatsApp Group", members: "500", icon: "📱", color: "#00e5ff" },
+  { name: "Discord Server", members: "1.2K", icon: "💬", color: "#7b2dff", link: "https://discord.gg/mDnMNaXXA" },
+  { name: "WhatsApp Group", members: "500", icon: "📱", color: "#00e5ff", link: "https://chat.whatsapp.com/your-group-invite" },
 ];
 
 export default function CommunityDownloads() {
@@ -30,13 +30,16 @@ export default function CommunityDownloads() {
 
           <div className="mx-auto grid max-w-xl grid-cols-1 gap-6 sm:grid-cols-2">
             {community.map((c, i) => (
-              <motion.div
+              <motion.a
                 key={c.name}
+                href={c.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="glass-panel clip-notch group relative overflow-hidden p-6 text-center"
+                className="glass-panel clip-notch group relative overflow-hidden p-6 text-center cursor-pointer"
               >
                 <div className="absolute -bottom-8 -right-8 h-24 w-24 rounded-full opacity-20 blur-2xl transition-opacity group-hover:opacity-40" style={{ background: c.color }} />
                 <div className="mb-3 text-4xl">{c.icon}</div>
@@ -44,7 +47,7 @@ export default function CommunityDownloads() {
                 <p className="font-mono-cyber mt-1 text-xs" style={{ color: c.color }}>
                   {c.members} MEMBERS
                 </p>
-              </motion.div>
+              </motion.a>
             ))}
           </div>
         </div>
@@ -82,27 +85,35 @@ export default function CommunityDownloads() {
               <h3 className="font-display text-xl font-black text-white">ETERNAL ECHOES // V1.0 BETA</h3>
               <p className="mt-1 font-mono-cyber text-xs text-slate-400">FREE TO PLAY • CROSS-PLATFORM • 400MB+</p>
             </div>
-            <button className="btn-cyber clip-notch box-glow-blue relative border border-cyan-400 bg-gradient-to-r from-cyan-500/30 to-cyan-400/10 px-10 py-4 font-display text-sm font-bold tracking-[0.15em] text-cyan-200 hover:scale-105">
+            
+              href={platforms[0].link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-cyber clip-notch box-glow-blue relative border border-cyan-400 bg-gradient-to-r from-cyan-500/30 to-cyan-400/10 px-10 py-4 font-display text-sm font-bold tracking-[0.15em] text-cyan-200 hover:scale-105"
+            >
               ⚡ DOWNLOAD NOW
-            </button>
+            </a>
           </motion.div>
 
           {/* platform grid */}
           <div className="mx-auto mt-10 grid max-w-xl grid-cols-1 gap-6 sm:grid-cols-2">
             {platforms.map((p, i) => (
-              <motion.button
+              <motion.a
                 key={p.name}
+                href={p.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="btn-cyber clip-notch glass group relative flex flex-col items-center gap-2 border border-cyan-400/20 p-6 transition-all hover:border-cyan-400/70 hover:box-glow-blue"
+                className="btn-cyber clip-notch glass group relative flex flex-col items-center gap-2 border border-cyan-400/20 p-6 transition-all hover:border-cyan-400/70 hover:box-glow-blue cursor-pointer"
               >
                 <span className="text-4xl transition-transform group-hover:scale-110">{p.icon}</span>
                 <span className="font-display text-sm font-bold text-white">{p.name}</span>
                 <span className="font-mono-cyber text-[10px] text-cyan-400">{p.version}</span>
                 <span className="font-mono-cyber text-[10px] text-slate-500">{p.size}</span>
-              </motion.button>
+              </motion.a>
             ))}
           </div>
 

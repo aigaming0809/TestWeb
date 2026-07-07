@@ -33,11 +33,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <div className="font-display text-2xl font-black tracking-[0.2em] text-white">
-              Eternal<span style={{ color: "#ff2a6d" }} className="text-glow-magenta">Echoes</span>
+              ETERNAL <span style={{ color: "#ff2a6d" }} className="text-glow-magenta">ECHOES</span>
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-400">
-              A next-generation cyberpunk dueling network. Enter the grid, forge your legend, and dominate the
-              digital duel dimension.
+              Eternal Echoes Community — a next-generation cyberpunk dueling network. Enter the grid, forge your
+              legend, and dominate the digital duel dimension.
             </p>
             <div className="mt-6 flex gap-3">
               {socials.map((s) => (
@@ -69,7 +69,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/5 py-8 text-center font-mono-cyber text-[11px] text-slate-500 md:flex-row">
-          <span>© 2026 Eternal Echoes. ALL DATA RIGHTS RESERVED.</span>
+          <span>© 2099 ETERNAL ECHOES COMMUNITY. ALL DATA RIGHTS RESERVED.</span>
           <span className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-cyan-400" />
             GRID STATUS: OPERATIONAL

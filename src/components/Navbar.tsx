@@ -53,9 +53,9 @@ export default function Navbar() {
           </div>
           <div className="font-display leading-none">
             <div className="text-lg font-bold tracking-[0.2em] text-white">
-              NEXUS<span className="text-glow-magenta text-[#ff2a6d]">DUEL</span>
+              Eternal<span className="text-glow-magenta text-[#ff2a6d]">Echoes</span>
             </div>
-            <div className="font-mono-cyber text-[9px] tracking-[0.3em] text-cyan-400/70">EST. 2099 // GRID-7</div>
+            <div className="font-mono-cyber text-[9px] tracking-[0.3em] text-cyan-400/70">EST. 2026</div>
           </div>
         </Link>
 

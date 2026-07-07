@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { navItems } from "../data/content";
 
@@ -7,6 +7,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -21,15 +22,17 @@ export default function Navbar() {
 
   const handleNavClick = (item: string) => {
     setMenuOpen(false);
-    // If on cards page and clicking home, navigate home
-    if (item === "Home" && location.pathname !== "/") {
+    const id = item.toLowerCase().replace(/\s+/g, "-");
+
+    if (location.pathname !== "/") {
+      // Not on the home page (e.g. on /cards) — navigate home first,
+      // then scroll to the target section once HomePage has mounted.
+      navigate("/", { state: { scrollTo: id } });
       return;
     }
-    // Otherwise scroll to section on current page
-    if (location.pathname === "/") {
-      const id = item.toLowerCase().replace(/\s+/g, "-");
-      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    }
+
+    // Already on the home page — just scroll directly.
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (

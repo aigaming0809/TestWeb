@@ -40,7 +40,7 @@ export default function Hero() {
         transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
       >
         <div className="clip-notch overflow-hidden rounded-lg border border-cyan-400/50 box-glow-blue">
-          <img src="/images/card-dragon.jpg" className="h-56 w-full object-cover opacity-90" />
+          <img src="/images/yami_marik.png" className="h-56 w-full object-cover opacity-90" />
         </div>
       </motion.div>
       <motion.div
@@ -49,7 +49,7 @@ export default function Hero() {
         transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
       >
         <div className="clip-notch overflow-hidden rounded-lg border box-glow-magenta" style={{ borderColor: "#ff2a6d80" }}>
-          <img src="/images/card-sorceress.jpg" className="h-44 w-full object-cover opacity-90" />
+          <img src="/images/yami_yugi.png" className="h-44 w-full object-cover opacity-90" />
         </div>
       </motion.div>
 

@@ -5,7 +5,7 @@ export const duelists = [
     title: "The Circuit Breaker",
     rank: "S-Class Duelist",
     winRate: 94,
-    image: "/images/duelist-1.jpg",
+    image: "/images/duelist-1.png",
     signatureCard: "Cyber Dragon Prime",
     bio: "A rogue netrunner-turned-duelist who hacks the arena's holo-grid mid-duel, bending probability fields to summon his mechanical dragons ahead of schedule.",
     element: "Cyber / Machine",

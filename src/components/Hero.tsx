@@ -62,7 +62,7 @@ export default function Hero() {
           className="glass mb-6 flex items-center gap-2 rounded-full px-4 py-1.5 font-mono-cyber text-[11px] tracking-[0.3em] text-cyan-300"
         >
           <span className="h-2 w-2 animate-pulse rounded-full bg-cyan-400 shadow-[0_0_8px_#00e5ff]" />
-          SYSTEM ONLINE // 1,204,381 DUELISTS CONNECTED
+          Now Launch Version v 1.0 BETA
         </motion.div>
 
         <motion.h1
@@ -119,19 +119,6 @@ export default function Hero() {
           </button>
         </motion.div>
       </div>
-
-      {/* scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.4 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-      >
-        <div className="flex flex-col items-center gap-2">
-          <span className="font-mono-cyber text-[10px] tracking-[0.3em] text-cyan-400/70">SCROLL</span>
-          <div className="h-10 w-[1px] animate-pulse bg-gradient-to-b from-cyan-400 to-transparent" />
-        </div>
-      </motion.div>
     </section>
   );
 }

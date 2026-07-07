@@ -1,11 +1,11 @@
 export const duelists = [
   {
     id: 1,
-    name: "Kaiba",
+    name: "KAIZO VANTABLACK",
     title: "The Circuit Breaker",
     rank: "S-Class Duelist",
     winRate: 94,
-    image: "/images/duelist-1.png",
+    image: "/images/duelist-1.jpg",
     signatureCard: "Cyber Dragon Prime",
     bio: "A rogue netrunner-turned-duelist who hacks the arena's holo-grid mid-duel, bending probability fields to summon his mechanical dragons ahead of schedule.",
     element: "Cyber / Machine",
@@ -13,11 +13,11 @@ export const duelists = [
   },
   {
     id: 2,
-    name: "Yami Bakura",
+    name: "LUNA NEONSTRIKE",
     title: "Phantom of the Grid",
     rank: "S-Class Duelist",
     winRate: 91,
-    image: "/images/yami_bakura.png",
+    image: "/images/duelist-2.jpg",
     signatureCard: "Magenta Phoenix Array",
     bio: "Former champion of the underground duel circuits, Luna wields plasma-forged phoenixes that resurrect from ashes of data, punishing overconfident opponents.",
     element: "Plasma / Phoenix",
@@ -25,11 +25,11 @@ export const duelists = [
   },
   {
     id: 3,
-    name: "Yami Marik",
+    name: "DRAKON ZERO",
     title: "The Dragon Tamer",
     rank: "A-Class Duelist",
     winRate: 88,
-    image: "/images/yami_marik.png",
+    image: "/images/duelist-3.jpg",
     signatureCard: "Wyrm of the Neon Abyss",
     bio: "Raised in the lower sectors of the cyber-metropolis, Drakon bonded with a rogue AI dragon construct, forming an unbreakable duel-link bond.",
     element: "Dragon / Cyber",
@@ -37,11 +37,11 @@ export const duelists = [
   },
   {
     id: 4,
-    name: "Yami Yugi",
+    name: "MORGRAVE VOID",
     title: "Archon of Shadows",
     rank: "S-Class Duelist",
     winRate: 96,
-    image: "/images/yami_yugi.png",
+    image: "/images/duelist-4.jpg",
     signatureCard: "Sovereign of the Null Sigil",
     bio: "A dark sorcerer duelist who manipulates corrupted data-magic, warping the duel field itself into a void of shifting shadows and forbidden spell circuits.",
     element: "Dark / Spellcaster",
@@ -197,109 +197,38 @@ export const navItems = [
 export const patchNotes = [
   {
     id: 1,
-    version: "v4.7.2",
-    date: "12.04.2099",
-    tag: "MAJOR UPDATE",
-    title: "Overclock Fusion System",
+    version: "V1.0 BETA",
+    date: "07.07.2099",
+    tag: "INITIAL RELEASE",
+    title: "Eternal Echoes Community — Beta Launch",
     image: "/images/card-dragon.jpg",
     color: "#00e5ff",
     summary:
-      "Introducing the all-new Fusion Overclock mechanic — fuse monsters mid-battle for devastating combo chains. Plus a brand new arena and balance tuning.",
+      "Welcome to the very first build of Eternal Echoes Community. The grid is live — jump in, explore the arena, and help us shape what comes next.",
     highlights: [
       {
         category: "NEW FEATURES",
         icon: "✦",
         items: [
-          "Added Fusion Overclock mechanic for mid-battle monster fusion",
-          "New playable duelist: MORGRAVE VOID — The Archon of Shadows",
-          "Neon Colosseum arena now available in ranked rotation",
-          "Holographic shimmer upgraded for Secret Rare cards",
+          "Initial roster of playable duelists now available",
+          "Full card database with rarity filtering and search",
+          "Cross-platform beta available on PC and Mobile",
         ],
       },
       {
-        category: "BALANCE",
-        icon: "⚖",
+        category: "KNOWN ISSUES",
+        icon: "⚠",
         items: [
-          "Cyber Dragon Prime ATK reduced 3200 → 3050",
-          "Magenta Phoenix Array respawn cooldown increased to 2 cycles",
-          "Void Sigil effect no longer stacks beyond 3 links",
+          "Some visual effects may not render on low-end devices",
+          "Leaderboard sync may be delayed during peak hours",
         ],
       },
       {
-        category: "BUG FIXES",
-        icon: "✔",
-        items: [
-          "Fixed holographic shimmer glitch on low-end devices",
-          "Resolved disconnect issue occurring on turn 9",
-          "Fixed ranked point calculation on ranked surrender",
-        ],
-      },
-    ],
-  },
-  {
-    id: 2,
-    version: "v4.6.0",
-    date: "10.28.2099",
-    tag: "PATCH",
-    title: "Cyber Grid Expansion",
-    image: "/images/card-phoenix.jpg",
-    color: "#ff2a6d",
-    summary:
-      "Expanded the card database with 40 new cards and introduced the Plasma Phoenix archetype to the meta.",
-    highlights: [
-      {
-        category: "NEW FEATURES",
-        icon: "✦",
-        items: [
-          "Added 40 new cards including the Plasma Phoenix archetype",
-          "Deck Builder neural analysis engine updated",
-          "New community tournament system beta",
-        ],
-      },
-      {
-        category: "BALANCE",
-        icon: "⚖",
-        items: [
-          "Mecha Knight Ascendant DEF increased 2500 → 2700",
-          "Reduced energy cost for DEFENSE MODE activation",
-        ],
-      },
-      {
-        category: "BUG FIXES",
-        icon: "✔",
-        items: [
-          "Fixed visual glitch when summoning during lightning phase",
-          "Corrected leaderboard medal display order",
-        ],
-      },
-    ],
-  },
-  {
-    id: 3,
-    version: "v4.5.1",
-    date: "09.15.2099",
-    tag: "HOTFIX",
-    title: "Arena Stability Patch",
-    image: "/images/card-knight.jpg",
-    color: "#00f5d4",
-    summary:
-      "Critical stability fixes addressing server-side duel crashes and connection drops during ranked matches.",
-    highlights: [
-      {
-        category: "BUG FIXES",
-        icon: "✔",
-        items: [
-          "Resolved critical server crash during ranked matchmaking",
-          "Fixed connection drop when entering Duel Arena",
-          "Addressed memory leak in holographic rendering",
-        ],
-      },
-      {
-        category: "PERFORMANCE",
+        category: "COMING SOON",
         icon: "⚡",
         items: [
-          "Reduced arena load time by 35%",
-          "Optimized particle system for smoother 60fps on mobile",
+          "Ranked tournament system",
+          "Additional card sets and duelists",
         ],
       },
     ],

@@ -61,7 +61,7 @@ export default function Navbar() {
             <div className="text-lg font-bold tracking-[0.2em] text-white">
               ETERNAL <span className="text-glow-magenta text-[#ff2a6d]">ECHOES</span>
             </div>
-            <div className="font-mono-cyber text-[9px] tracking-[0.3em] text-cyan-400/70">COMMUNITY</div>
+            <div className="font-mono-cyber text-[9px] tracking-[0.3em] text-cyan-400/70">EST 2026</div>
           </div>
         </Link>
 

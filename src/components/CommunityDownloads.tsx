@@ -97,9 +97,9 @@ export default function CommunityDownloads() {
               href={platforms[0].link}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-cyber clip-notch box-glow-blue inline-flex items-center justify-center border border-cyan-400 bg-gradient-to-r from-cyan-500/30 to-cyan-400/10 px-10 py-4 font-display text-sm font-bold tracking-[0.15em] text-cyan-200 no-underline hover:scale-105"
+              className="btn-cyber clip-notch box-glow-blue inline-flex items-center justify-center whitespace-nowrap border border-cyan-400 bg-gradient-to-r from-cyan-500/30 to-cyan-400/10 px-10 py-4 font-display text-sm font-bold tracking-[0.15em] text-cyan-200 no-underline hover:scale-105"
             >
-              ⚡ DOWNLOAD
+              ⚡ DOWNLOAD NOW
             </a>
           </motion.div>
 

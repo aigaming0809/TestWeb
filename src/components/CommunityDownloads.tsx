@@ -1,22 +1,17 @@
 import { motion } from "framer-motion";
 
 const platforms = [
-  { name: "PC / STEAM", icon: "🖥️", size: "42 GB", version: "v4.7.2" },
-  { name: "PLAYSTATION", icon: "🎮", size: "38 GB", version: "v4.7.2" },
-  { name: "XBOX SERIES", icon: "🕹️", size: "38 GB", version: "v4.7.2" },
-  { name: "MOBILE", icon: "📱", size: "6 GB", version: "v4.7.2" },
+  { name: "PC / STEAM", icon: "🖥️", size: "400+ MB", version: "1.0 BETA" },
+  { name: "MOBILE", icon: "📱", size: "400+ MB", version: "v1.0 BETA" },
 ];
 
 const specs = [
-  { label: "MINIMUM", color: "#8aa0b8", specs: ["OS: Windows 10 64-bit", "RAM: 8 GB", "GPU: GTX 1060 / RX 580", "Storage: 45 GB SSD"] },
-  { label: "RECOMMENDED", color: "#00e5ff", specs: ["OS: Windows 11 64-bit", "RAM: 16 GB", "GPU: RTX 3070 / RX 6700", "Storage: 45 GB NVMe"] },
-];
+  { label: "RECOMENDED", color: "#8aa0b8", specs: ["OS: Windows 10 64-bit", "RAM: 8 GB", "GPU: GTX 1060 / RX 580", "Storage: 45 GB SSD"] },
+  ];
 
 const community = [
-  { name: "Discord Network", members: "482K", icon: "💬", color: "#7b2dff" },
-  { name: "Duelist Forums", members: "210K", icon: "🗂️", color: "#00e5ff" },
-  { name: "Streaming Hub", members: "95K", icon: "📡", color: "#ff2a6d" },
-  { name: "Fan Art Grid", members: "63K", icon: "🎨", color: "#00f5d4" },
+  { name: "Discord", members: "482K", icon: "💬", color: "#7b2dff" },
+  { name: "Whatsapp Group", members: "210K", icon: "💬", color: "#00e5ff" },
 ];
 
 export default function CommunityDownloads() {

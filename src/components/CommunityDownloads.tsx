@@ -85,7 +85,7 @@ export default function CommunityDownloads() {
               <h3 className="font-display text-xl font-black text-white">ETERNAL ECHOES // V1.0 BETA</h3>
               <p className="mt-1 font-mono-cyber text-xs text-slate-400">FREE TO PLAY • CROSS-PLATFORM • 400MB+</p>
             </div>
-            
+            <
               href={platforms[0].link}
               target="_blank"
               rel="noopener noreferrer"

@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import CardsPage from "./pages/CardsPage";
+import DuelistsPage from "./pages/DuelistsPage";
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
               }
             />
             <Route path="/cards" element={<CardsPage />} />
+            <Route path="/duelists" element={<DuelistsPage />} />
           </Routes>
         </main>
         <div className="relative z-10">

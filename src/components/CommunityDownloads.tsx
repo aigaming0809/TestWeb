@@ -12,7 +12,7 @@ const specs = [
 
 const community = [
   { name: "Discord Server", members: "1.2K", icon: "💬", color: "#7b2dff", link: "https://discord.gg/mDnMNaXXA" },
-  { name: "WhatsApp Group", members: "500", icon: "📱", color: "#00e5ff", link: "https://chat.whatsapp.com/your-group-invite" },
+  { name: "WhatsApp Group", members: "500", icon: "📱", color: "#00e5ff", link: "https://chat.whatsapp.com/GiPmI6t2jIj0JQiX3fDN3C?s=cl&p=a&ilr=1" },
 ];
 
 export default function CommunityDownloads() {

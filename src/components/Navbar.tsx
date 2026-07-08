@@ -3,6 +3,12 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { navItems } from "../data/content";
 
+// Nav items that link to a dedicated route instead of scrolling to a section
+const ROUTE_LINKS: Record<string, string> = {
+  Cards: "/cards",
+  Duelists: "/duelists",
+};
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -68,13 +74,13 @@ export default function Navbar() {
         {/* Desktop nav */}
         <nav className="hidden items-center gap-1 xl:flex">
           {navItems.map((item) => {
-            const isCards = item === "Cards";
+            const routeTo = ROUTE_LINKS[item];
 
-            if (isCards) {
+            if (routeTo) {
               return (
                 <Link
                   key={item}
-                  to="/cards"
+                  to={routeTo}
                   className="group relative px-3.5 py-2 font-display text-[11px] font-medium tracking-[0.12em] uppercase transition-colors duration-300 text-slate-300 hover:text-cyan-300"
                 >
                   {item}
@@ -130,12 +136,12 @@ export default function Navbar() {
           >
             <div className="glass flex flex-col gap-1 px-6 py-4">
               {navItems.map((item) => {
-                const isCards = item === "Cards";
-                if (isCards) {
+                const routeTo = ROUTE_LINKS[item];
+                if (routeTo) {
                   return (
                     <Link
                       key={item}
-                      to="/cards"
+                      to={routeTo}
                       className="py-2 text-left font-display text-sm tracking-wider uppercase text-slate-300 hover:text-cyan-300"
                     >
                       {item}

@@ -6,7 +6,7 @@ const socials = [
 const columns = [
   {
     title: "GAME",
-    links: ["Cards", "Characters", "Patch Notes", "Download"],
+    links: ["Cards", "Duelists", "Characters", "Patch Notes", "Download"],
   },
   {
     title: "COMMUNITY",

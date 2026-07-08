@@ -145,6 +145,7 @@ export const cards = [
 export const navItems = [
   "Home",
   "Cards",
+  "Duelists",
   "Characters",
   "Patch Notes",
   "Community",
